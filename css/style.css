@@ -143,6 +143,16 @@ header h1 {
 section {
     margin-bottom: 20px;
 }
+dialog::open{
+
+    position:static;
+ height: 100%;
+ width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 @media(min-width:1024px) and (max-width:1440px){
     .navbar {
         display: flex;
