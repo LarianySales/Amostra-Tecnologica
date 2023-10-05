@@ -119,7 +119,9 @@ header h1 {
     height: 224px;
     border: none;
 }
-
+button:focus{
+    outline: none;
+}
 .trocasVendas {
     display: flex;
     justify-content: space-between;
@@ -143,15 +145,65 @@ header h1 {
 section {
     margin-bottom: 20px;
 }
-dialog::open{
-
-    position:static;
- height: 100%;
- width: 100%;
+dialog{
+    position:relative;
+    top: 380px;
+    background-color: #26698E;
+    margin: 0 auto;
+    width: 100%;
+    height: 580px;
+    font-family: 'Itim', cursive;
+    padding: 20px;
+ border: none;
+}
+dialog::backdrop{
+    background: #153f5e59;
+}
+strong{
+    text-decoration: underline;
+  color: #0d0d0e;
+}
+.info{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+ gap:5rem;
+}
+.infoemp{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
 
+}
+dialog button{
+    margin-top: 39px;
+    border: none;
+    background-color: #3890C1;
+    border-radius: 40px;
+    width: 410px;
+    height: 79px;
+}
+dialog a{
+    text-decoration: none;
+    color: #CADAE5;
+font-size: 32px;
+font-family: 'Inter', sans-serif;
+font-weight: 700;
+}
+dialog h3{
+    font-size: 12px;
+    color: #ffffffc4;
+}
+.infoemp p{
+    font-size: 24px;
+    text-justify: distribute;
+ width: 950px;
+}
+.info img{
+    width: 500px;
+    height: 500px;
 }
 @media(min-width:1024px) and (max-width:1440px){
     .navbar {
@@ -200,6 +252,46 @@ dialog::open{
         width: 170px;
         height: 167px;
     }
+    dialog{
+        width: 100%;
+        height: 580px;
+        font-family: 'Itim', cursive;
+        padding: 30px;
+     
+    }
+ 
+    .info{
+      
+        padding: 10px;
+     gap:5rem;
+    }
+    .infoemp{
+        width: 850px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    dialog button{
+       
+        width: 310px;
+        height: 69px;
+    }
+    dialog a{ 
+    font-size: 22px;
+    }
+    dialog h3{
+        font-size: 12px;
+        color: #ffffffc4;
+    }
+    .infoemp p{
+        font-size: 35px;
+        text-justify: distribute;
+     width: 950px;
+    }
+    .info img{
+        width: 440px;
+        height: 440px;
+    }
 
 
 }
@@ -235,6 +327,42 @@ dialog::open{
         border: none;
         padding: .6rem;
         border-radius: 20px;
+    }
+
+    dialog{
+        width: 100%;
+        height: 500px;
+        padding: 2px;
+    }
+
+    dialog button{
+        margin-top: 39px;
+        border: none;
+        background-color: #3890C1;
+        border-radius: 40px;
+        width: 210px;
+        height: 39px;
+    }
+    dialog a{
+        text-decoration: none;
+        color: #CADAE5;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    }
+    
+    .infoemp p{
+        font-size: 12px;
+        text-justify:auto;
+     width: 50px;
+    }
+    .info h4{
+        font-size: 15px;
+    }
+
+    .info img{
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -281,6 +409,45 @@ dialog::open{
         margin-top: 10px;
         padding: 20px;
 
+    }
+    dialog{
+        
+        width: 100%;
+        height: 380px;
+        padding: 2px;
+    }
+
+    dialog button{
+        display: flex;
+        justify-content: center;
+     align-items: center;
+        margin-top: 40px;
+        width: 190px;
+        height: 39px;
+    }
+    dialog a{
+    font-size: 14px;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+flex-direction: column;
+    }
+    .infoemp p{
+        font-size: 12px;
+        text-justify:auto;
+     width: 50px;
+    }
+    .info h4{
+        font-size: 15px;
+    }
+
+    .info img{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
